@@ -1,6 +1,6 @@
 (function() {
   var io;
-  io = require('socket.io').listen(4000);
+  io = require('socket.io').listen(7777);
   io.sockets.on('connection', function(socket) {
     socket.on('drawClick', function(data) {
       socket.broadcast.emit('draw', {

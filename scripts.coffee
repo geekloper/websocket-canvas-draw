@@ -19,7 +19,7 @@ App.init = ->
 	App.ctx.lineCap = "round"
 		
 	# Sockets!
-	App.socket = io.connect('http://localhost:4000')
+	App.socket = io.connect('http://localhost:7777')
 	
 	App.socket.on 'draw', (data) ->
 		App.draw(data.x,data.y,data.type)
